@@ -1,0 +1,38 @@
+/* include css lain */
+
+@import "/css/partial/navbar.css";
+@import "/css/partial/hero.css";
+@import "/css/partial/service.css";
+@import "/css/partial/galeri.css";
+@import "/css/partial/paket.css";
+@import "/css/partial/testimonial.css";
+@import "/css/partial/blog.css";
+@import "/css/partial/kontak.css";
+@import "/css/partial/footer.css";
+
+:root {
+    --primary-color: #F7E6DF;
+    --putih: #fff;
+    --coklat1: #966443;
+    --coklat2: #75492b;
+    --hitam: #151515;
+    --abu2: #ced4da;
+    --h2-color: #5C5341;
+    --sub-title-color: #AB7575;
+
+    --h2-size: 50px;
+    --h3-font-size: 1.25rem;
+    --sub-title-size: 100px;
+}
+
+body {
+    /* font-family: 'Great Vibes', cursive; */
+    /* font-family: 'Alex Brush', cursive; */
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Lustria', serif; */
+    /* font-family: 'Poly', serif; */
+    background-color: var(--putih);
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}

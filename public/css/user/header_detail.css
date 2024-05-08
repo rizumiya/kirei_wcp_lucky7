@@ -1,0 +1,89 @@
+:root {
+    --primary-color: #F7E6DF;
+    --putih: #fff;
+    --coklat1: #966443;
+    --coklat2: #75492b;
+    --hitam: #151515;
+    --abu2: #ced4da;
+    --h2-color: #5C5341;
+    --sub-title-color: #AB7575;
+
+    --h2-size: 50px;
+    --sub-title-size: 100px;
+}
+
+/* Booking */
+
+.header {
+    /* background-image: url(../img/bgr/book.png); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 571px;
+}
+
+.header h1 {
+    color: var(--putih);
+    font-family: 'Great Vibes', cursive;
+    font-weight: 400;
+    font-size: 80px;
+    padding-top: 200px;
+}
+
+.header .isi {
+    margin-bottom: 164px;
+    text-align: center;
+}
+
+.header .isi p {
+    color: var(--putih);
+    font-family: 'Great Vibes', cursive;
+    font-weight: 400;
+    font-size: 26px;
+}
+
+.header .isi p a {
+    color: var(--putih);
+    text-decoration: none;
+    position: relative;
+}
+
+.header .isi p a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--putih);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.header .isi p a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.header .isi img {
+    margin: 0 8px 0 15px;
+    height: 20px;
+}
+
+.header .isi span {
+    font-family: 'Poly', serif;
+    font-size: 20px;
+    line-height: 40px;
+    color: var(--putih);
+}
+
+.header .isi p {
+    margin-top: 45px;
+}
+
+.header .sub-title {
+    font-size: var(--sub-title-size);
+    font-family: 'Lustria', serif;
+    color: var(--sub-title-color);
+    white-space: nowrap;
+}

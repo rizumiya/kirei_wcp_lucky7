@@ -1,0 +1,134 @@
+/* navbar */
+
+.navbar {
+    z-index: 999;
+    padding: 10px 0;
+}
+
+* {
+    z-index: 2;
+}
+
+.accent-img {
+    z-index: 1;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 25px;
+    font-family: 'Great Vibes', cursive;
+    color: var(--coklat2) !important;
+}
+
+.navbar-brand:hover {
+    font-family: 'Great Vibes', cursive;
+    color: var(--coklat2);
+}
+
+.nav-link {
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+    transition: all 0.4s ease;
+    color: var(--coklat1) !important;
+}
+
+/* .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: var(--first-color);
+    transition: all 0.4s ease-in-out;
+} */
+
+.nav-link.active {
+    font-weight: 700;
+    color: var(--coklat2) !important;
+}
+
+.nav-item:hover a.nav-link {
+    transition: all 0.4s ease;
+    color: var(--coklat2) !important;
+}
+
+.button-primary {
+    width: 133px;
+    height: 40px;
+    background-color: transparent;
+    color: var(--coklat2);
+    border: 2px solid var(--coklat2);
+    font-size: 16px;
+    font-weight: 700;
+    transition: all .2s ease-in-out;
+}
+
+.button-primary:hover {
+    background-color: var(--coklat2);
+    color: var(--putih);
+    transition: all .2s ease-in-out;
+}
+
+/* navbar color */
+.nav-color {
+    background-color: var(--putih) !important;
+    box-shadow: 0 4px 6px rgb(0 0 0 / 10%);
+    transition: all ease-in-out .5s;
+}
+
+.bg-nav {
+    transition: all ease-in-out .3s;
+    background: rgba(255, 255, 255, 0.3) !important;
+}
+
+/* drop down */
+
+.dropdown-menu {
+    border: none;
+    outline: none;
+    border-radius: 0;
+    font-size: 15px;
+    min-width: 200px;
+    box-shadow: 0 4px 6px rgb(0 0 0 / 10%);
+}
+
+.dropdown-menu[data-bs-popper] {
+    top: 100%;
+    left: 0;
+    transition: 3s all ease;
+    margin-top: 1.3rem;
+}
+
+.dropdown-item {
+    color: var(--coklat1);
+}
+
+.dropdown-item:active {
+    color: var(--coklat1);
+    background-color: var(--putih);
+}
+
+.dropdown-item:hover {
+    color: var(--coklat2);
+    font-weight: 400;
+}
+
+/* responsivitas */
+
+@media screen and (max-width: 992px) {
+    .bg-nav {
+        background: var(--putih) !important;
+    }
+
+    .dropdown-menu[data-bs-popper] {
+        margin-top: 0.125rem;
+        box-shadow:none;
+    }
+}
+
+
+@media screen and (max-width: 576px) {}
+
+@media screen and (max-width: 350px) {}

@@ -1,0 +1,149 @@
+/* blog */
+
+#blog {
+    padding: 90px 0 40px 0;
+
+    background-image: url(../../img/aksesoris/arabesque-left-top.svg);
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+
+#blog .container h2 {
+    font-size: 48px;
+    font-weight: 700;
+    font-family: 'Alex Brush', cursive;
+    /* font-style: italic; */
+    position: relative;
+    white-space: nowrap;
+    top: -75px;
+    color: var(--h2-color);
+}
+
+#blog .container h2::selection {
+    color: var(--putih);
+    background: var(--h2-color);
+}
+
+#blog .container h2::-moz-selection {
+    color: var(--putih);
+    background: var(--sub-title-color);
+}
+
+#blog .container .sub-title {
+    font-size: 100px;
+    white-space: nowrap;
+    color: #ab7575;
+    font-family: 'Great Vibes', cursive;
+}
+
+#blog .sub-title::-moz-selection {
+    color: var(--putih);
+    background: var(--sub-title-color);
+}
+
+#blog .sub-title::selection {
+    color: var(--putih);
+    background: var(--sub-title-color);
+}
+
+#blog .box-icon {
+    width: 100%;
+    height: 220px;
+    background-color: var(--primary-color);
+    transition: all .2s ease-in;
+    border-radius: 5px 5px 0 0;
+    margin-bottom: 10px;
+}
+
+.box-icon img {
+    height: 100%;
+    border-radius: 5px 5px 0 0;
+    object-fit: cover;
+}
+
+.card-berita {
+    width: 90%;
+    height: 500px;
+    border-radius: 5px;
+    background-color: var(--putih);
+    box-shadow: 0 0 7px 3px rgba(0, 0, 0, 0.05);
+    transition: all .3s ease-in;
+}
+
+.card-berita span {
+    text-align: start;
+    margin: 20px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.card-berita h3 {
+    text-align: start;
+    color: var(--hitam);
+    margin: 20px;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.card-berita h3:hover {
+    color: var(--coklat2);
+}
+
+.card-berita a {
+    text-decoration: none;
+}
+
+.card-berita p {
+    text-align: start;
+    color: var(--hitam);
+    margin: 20px;
+    font-size: 14px;
+}
+
+.button-primary {
+    width: 133px;
+    height: 40px;
+    background-color: transparent;
+    color: var(--coklat2);
+    border: 2px solid var(--coklat2);
+    font-size: 16px;
+    font-weight: 700;
+    transition: all .2s ease-in-out;
+}
+
+.button-primary:hover {
+    background-color: var(--coklat2);
+    color: var(--putih);
+    transition: all .2s ease-in-out;
+}
+
+/* 
+#blog .button-lg-primary {
+    z-index: 3;
+    width: 110px;
+    height: 50px;
+    margin-top: 20px;
+    background-color: #ab7575;
+    color: var(--putih);
+    border: none;
+    border-radius: 8px;
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: 700;
+    transition: all .2s ease-in-out;
+}
+
+#blog button:hover {
+    z-index: 3;
+    background-color: var(--coklat1);
+    color: var(--putih);
+    transition: all .2s ease-in-out;
+} */
+
+/* Responsivitas */
+
+@media screen and (max-width: 992px) {}
+
+@media screen and (max-width: 576px) {}
+
+@media screen and (max-width: 350px) {}

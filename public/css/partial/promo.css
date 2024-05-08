@@ -1,0 +1,51 @@
+/* Promo */
+
+.promo {
+    background-image: url(../../img/bgr/bg_promo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Lustria', serif;
+    padding: 90px 0 40px;
+}
+
+.promo .container h2 {
+    font-size: var(--h2-size);
+    font-family: 'Lustria', serif;
+    white-space: normal;
+    top: 0;
+    color: var(--putih);
+}
+
+.promo .container h2::selection {
+    color: var(--hitam);
+    background: var(--putih);
+}
+
+.promo .container h2::-moz-selection {
+    color: var(--hitam);
+    background: var(--putih);
+}
+
+.promo .container .sub-title {
+    font-size: 80px;
+    font-family: 'Lustria', serif;
+    white-space: normal;
+    color: var(--putih);
+}
+
+.promo .sub-title::-moz-selection {
+    color: var(--hitam);
+    background: var(--putih);
+}
+
+.promo .sub-title::selection {
+    color: var(--hitam);
+    background: var(--putih);
+}
+
+.promo .btn {
+    margin: 30px 0;
+    font-family: 'Lustria', serif;
+    font-weight: 700;
+    padding: 10px 20px;
+}

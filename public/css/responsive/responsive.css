@@ -1,0 +1,35 @@
+@media screen and (max-width: 992px) {}
+
+@media screen and (max-width: 576px) {
+    .sub-title {
+        font-size: 72px !important;
+    }
+
+    h2.promo-h2 {
+        font-size: 34px !important;
+        top: 0 !important;
+    }
+
+    h2 {
+        font-size: 34px !important;
+        top: -50px !important;
+    }
+
+    .button-lg-primary {
+        font-size: 16px !important;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+    span.sub-title {
+        font-size: 55px !important;
+    }
+
+    h2 {
+        font-size: 30px !important;
+        top: -45px !important;
+    }
+}
+
+@media screen and (max-width: 350px) {}

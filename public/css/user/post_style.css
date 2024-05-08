@@ -1,0 +1,117 @@
+/* include css lain */
+
+@import "/css/partial/navbar.css";
+
+:root {
+    --primary-color: #F7E6DF;
+    --putih: #fff;
+    --coklat1: #966443;
+    --coklat2: #75492b;
+    --hitam: #151515;
+    --abu2: #ced4da;
+    --h2-color: #5C5341;
+    --sub-title-color: #AB7575;
+
+    --h2-size: 50px;
+    --sub-title-size: 100px;
+}
+
+body {
+    /* font-family: 'Great Vibes', cursive; */
+    /* font-family: 'Poppins', sans-serif; */
+    /* font-family: 'Alex Brush', cursive; */
+    font-family: 'Lustria', serif;
+    /* font-family: 'Poly', serif; */
+    background-color: var(--putih);
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+* {
+    z-index: 2;
+}
+
+h2 {
+    font-size: var(--h2-size);
+    color: var(--h2-color);
+    font-weight: 700;
+    font-family: 'Alex Brush', cursive;
+    position: relative;
+    white-space: nowrap;
+    top: -75px;
+}
+
+/* navbar */
+
+.navbar {
+    z-index: 999;
+    padding: 10px 0;
+    background: var(--putih);
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 4px 6px rgb(0 0 0 / 10%);
+}
+
+.bg-nav {
+    transition: all ease-in-out .3s;
+    background: var(--putih) !important;
+}
+
+/* content part */
+
+.content {
+    padding: 90px 0 40px 0;
+    background-color: var(--putih);
+    border-radius: 0 0 300px 0;
+}
+
+.row.kateauth {
+    gap: 0px;
+}
+
+.post-gambar {
+    max-height: 400px;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+
+/* responsivitas */
+
+@media screen and (max-width: 1143px) {
+    .sisi-atas {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .sisi-atas {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .sisi-atas {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0;
+    }
+
+    .box {
+        padding-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header h1 {
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+
+    .sisi-atas {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

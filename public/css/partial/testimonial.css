@@ -1,0 +1,91 @@
+/* Testimonial */
+
+#testimonial {
+    /* height: 100vh; */
+    /* padding: 90px 0; */
+    background-color: var(--primary-color);
+    padding: 7rem 0;
+    background-image: url(../../img/aksesoris/arabesque-left-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    z-index: -1;
+}
+
+#testimonial .container h2 {
+    font-size: 48px;
+    font-weight: 700;
+    font-family: 'Alex Brush', cursive;
+    /* font-style: italic; */
+    position: relative;
+    white-space: nowrap;
+    top: -75px;
+    color: var(--h2-color);
+}
+
+#testimonial .container h2::selection {
+    color: var(--putih);
+    background: var(--h2-color);
+}
+
+#testimonial .container h2::-moz-selection {
+    color: var(--putih);
+    background: var(--sub-title-color);
+}
+
+#testimonial .container .sub-title {
+    font-size: 100px;
+    white-space: nowrap;
+    color: #ab7575;
+    font-family: 'Great Vibes', cursive;
+}
+
+#testimonial .sub-title::-moz-selection {
+    color: var(--putih);
+    background: #ab7575;
+}
+
+#testimonial .sub-title::selection {
+    color: var(--putih);
+    background: #ab7575;
+}
+
+.testimonial-card{
+    min-width: 380px;
+}
+
+.testimonial-card .card-up {
+    height: 120px;
+    overflow: hidden;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+
+.testimonial-card .avatar {
+    width: 110px;
+    margin-top: -60px;
+    overflow: hidden;
+    border: 3px solid #fff;
+    border-radius: 50%;
+}
+
+/* Responsivitas */
+
+@media screen and (max-width: 992px) {
+    .content {
+        max-width: 320px;
+    }
+
+    .content p {
+        line-height: 1.5;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .content p {
+        line-height: 1.2;
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 350px) {}

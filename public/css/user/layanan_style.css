@@ -1,0 +1,225 @@
+/* include css lain */
+
+@import "/css/partial/navbar.css";
+
+:root {
+    --primary-color: #F7E6DF;
+    --putih: #fff;
+    --coklat1: #966443;
+    --coklat2: #75492b;
+    --hitam: #151515;
+    --abu2: #ced4da;
+    --h2-color: #5C5341;
+    --sub-title-color: #AB7575;
+
+    --h2-size: 50px;
+    --sub-title-size: 100px;
+}
+
+body {
+    /* font-family: 'Great Vibes', cursive; */
+    /* font-family: 'Poppins', sans-serif; */
+    /* font-family: 'Alex Brush', cursive; */
+    font-family: 'Lustria', serif;
+    /* font-family: 'Poly', serif; */
+    background-color: var(--putih);
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+* {
+    z-index: 2;
+}
+
+h2 {
+    font-size: var(--h2-size);
+    color: var(--h2-color);
+    font-weight: 700;
+    font-family: 'Alex Brush', cursive;
+    position: relative;
+    white-space: nowrap;
+    top: -75px;
+}
+
+/* navbar */
+
+.navbar {
+    z-index: 999;
+    padding: 10px 0;
+    background: var(--putih);
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 4px 6px rgb(0 0 0 / 10%);
+}
+
+.bg-nav {
+    transition: all ease-in-out .3s;
+    background: var(--putih) !important;
+}
+
+/* content part */
+
+.container h2 {
+    font-size: var(--h2-size);
+    font-weight: 700;
+    font-family: 'Alex Brush', cursive;
+    position: relative;
+    white-space: nowrap;
+    top: -75px;
+    color: var(--h2-color);
+}
+
+.container h2::selection {
+    color: var(--putih);
+    background: var(--h2-color);
+}
+
+.container h2::-moz-selection {
+    color: var(--putih);
+    background: var(--h2-color);
+}
+
+.container .sub-title {
+    font-size: var(--sub-title-size);
+    white-space: nowrap;
+    color: var(--sub-title-color);
+    font-family: 'Great Vibes', cursive;
+}
+
+.sub-title::-moz-selection {
+    color: var(--putih);
+    background: var(--sub-title-color);
+}
+
+.sub-title::selection {
+    color: var(--putih);
+    background: var(--sub-title-color);
+}
+
+/* konten */
+.content {
+    padding: 90px 0 40px 0;
+    background-color: var(--putih);
+    border-radius: 0 0 300px 0;
+}
+
+
+
+.sisi-atas {
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    transition: all .3s ease-in;
+    gap: 10px;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+.img-hover-zoom {
+    overflow: hidden;
+}
+
+.img-hover-zoom img {
+    transition: transform .5s ease;
+}
+
+.img-hover-zoom:hover img {
+    transform: scale(1.1);
+}
+
+.box {
+    padding: 10px;
+}
+
+.card-body .btn-outline-primary {
+    color: var(--coklat1);
+    border: 1px solid var(--coklat1);
+    transition: .2s all ease-in;
+}
+
+.card-body .btn-outline-primary:hover {
+    border: 1px solid var(--coklat1);
+    background-color: var(--coklat1);
+    color: var(--putih);
+    transition: .2s all ease-in;
+}
+
+.card-body h3 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.card-body a.btn {
+    font-size: 14px;
+}
+
+/* Deal */
+
+.sisi-bawah {
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    transition: all .3s ease-in;
+    font-family: 'lustria', sans-serif;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.table-harga ul li {
+    list-style-type: none;
+    border-bottom: dotted 2px darkgray;
+}
+
+.table-harga ul{
+    padding: 0;
+}
+
+.table-harga ul li a,
+li .harga {
+    text-decoration: none;
+    transition: all .1s ease-in;
+    color: var(--hitam);
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.table-harga ul li a:hover {
+    color: var(--coklat1);
+    transition: all .1s ease-in;
+}
+
+/* responsivitas */
+
+@media screen and (max-width: 1143px) {
+    .sisi-atas {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .sisi-atas {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sisi-atas,
+    .sisi-bawah {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0;
+    }
+
+    .box {
+        padding-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .sisi-atas, 
+    .sisi-bawah {
+        margin: 0 auto;
+    }
+}

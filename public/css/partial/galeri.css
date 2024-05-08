@@ -1,0 +1,145 @@
+/* galeri section */
+
+#galeri {
+    padding: 90px 0 50px;
+    background-image: url(../../img/aksesoris/arabesque-left-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-color: var(--primary-color);
+}
+
+#galeri .container h2 {
+    font-size: 48px;
+    font-weight: 700;
+    font-family: 'Alex Brush', cursive;
+    /* font-style: italic; */
+    position: relative;
+    white-space: nowrap;
+    top: -75px;
+    color: var(--h2-color);
+}
+
+#galeri .container .sub-title {
+    font-size: 100px;
+    white-space: nowrap;
+    color: #ab7575;
+    font-family: 'Great Vibes', cursive;
+}
+
+.galeri-content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    transition: all .3s ease-in;
+    gap: 5px;
+}
+
+.galeri-content .box {
+    padding: 10px;
+}
+
+.galeri-content .box img {
+    width: 100%;
+    filter: brightness(80%);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    object-fit: cover;
+    border-radius: 3px;
+    transition: all .2s ease-in;
+    max-height: 255px;
+    overflow: hidden
+}
+
+#galeri img:hover {
+    transition: all .2s ease-in;
+    filter: brightness(100%);
+}
+
+.modal-img {
+    width: 100%;
+}
+
+.button-primary {
+    width: 133px;
+    height: 40px;
+    background-color: transparent;
+    color: var(--coklat2);
+    border: 2px solid var(--coklat2);
+    font-size: 16px;
+    font-weight: 700;
+    transition: all .2s ease-in-out;
+}
+
+.button-primary:hover {
+    background-color: var(--coklat2);
+    color: var(--putih);
+    transition: all .2s ease-in-out;
+}
+
+/* 
+#galeri button {
+    z-index: 3;
+    width: 110px;
+    height: 50px;
+    margin-top: 20px;
+    background-color: #ab7575;
+    color: var(--putih);
+    border: none;
+    border-radius: 8px;
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: 700;
+    transition: all .2s ease-in-out;
+}
+
+#galeri button:hover {
+    z-index: 3;
+    background-color: #5c3c12;
+    color: var(--putih);
+    width: 125px;
+    transition: all .2s ease-in-out;
+} */
+
+/* responsivitas */
+
+@media screen and (max-width: 992px) {
+    .galeri-content {
+        grid-template-columns: repeat(3, 1fr);
+        width: 90%;
+        align-items: center;
+    }
+
+    .hid2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .galeri-content {
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+        align-items: center;
+    }
+
+    .hid2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    .galeri-content {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        align-items: center;
+    }
+
+    .hid1 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 350px) {}
