@@ -26,7 +26,7 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
 0. Buka CMD
 1. `git clone https://github.com/rizumiya/kirei_wcp_lucky7.git`
 2. ubah .envnya ganti DB_DATABASE nya menjadi `kirei`
-3. import file `kirei.sql` ke database `kirei`
+3. import file `kirei.sql` ke database `kirei` (jika berhasil, dapat login ke admin dengan user:pass = qwe:qwe)
 4. `php artisan key:generate`
 5. `composer update --ignore-platform-reqs`
 6. jika opsi 3 di skip --> `php artisan migrate:fresh`
